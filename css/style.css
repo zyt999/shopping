@@ -74,6 +74,7 @@ body {
   display: block;
   padding: 10px 20px;
   letter-spacing: 8px;
+  color: #f67909;
 }
 .top_middle .search .search_head li .search_active {
   background-color: #f67909;
@@ -206,4 +207,217 @@ body {
   height: 520px;
   border-top: 4px solid #f67909;
   background-color: #fceddf;
+}
+.mian_top .width {
+  overflow: hidden;
+}
+.mian_top .sub_column {
+  float: left;
+  width: 250px;
+}
+.mian_top .sub_column li {
+  height: 42px;
+  line-height: 43px;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.mian_top .sub_column li a {
+  font-size: 14px;
+  color: #868685;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-left: 20px;
+}
+.mian_top .sub_column li a span {
+  float: left;
+}
+.mian_top .sub_column li a i {
+  float: right;
+  margin-right: 20px;
+}
+.mian_top .sub_column li a:hover {
+  background-color: #f67909;
+  color: #fff;
+}
+.mian_top .banner {
+  float: left;
+  margin: 5px 5px 0 5px;
+  width: 690px;
+}
+.mian_top .banner .ban_top {
+  position: relative;
+  width: 690px;
+  height: 330px;
+  box-sizing: border-box;
+}
+.mian_top .banner .ban_top .rotation li {
+  height: 330px;
+}
+.mian_top .banner .ban_top .rotation img {
+  width: 100%;
+  height: 100%;
+}
+.mian_top .banner .ban_top .spot {
+  width: 100%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+}
+.mian_top .banner .ban_top .spot li {
+  width: 17px;
+  height: 4px;
+  background-color: #fff;
+  float: right;
+  margin-right: 10px;
+  margin-top: 14px;
+}
+.mian_top .banner .ban_top .spot .spot_activt {
+  background-color: #f67909;
+}
+.mian_top .banner .ban_bot {
+  padding-top: 1px;
+}
+.mian_top .banner .ban_bot li {
+  float: left;
+  width: 229px;
+  height: 175px;
+  margin-right: 1px;
+}
+.mian_top .banner .ban_bot li a {
+  display: block;
+  position: relative;
+}
+.mian_top .banner .ban_bot li a .bot_text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 229px;
+  height: 175px;
+  color: #fff;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+.mian_top .banner .ban_bot li a .bot_text h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.mian_top .sign {
+  float: left;
+  margin-top: 5px;
+  width: 250px;
+}
+.mian_top .sign .sign_top {
+  width: 250px;
+  height: 45px ;
+  line-height: 45px;
+  text-align: center;
+  background-color: #f67909;
+}
+.mian_top .sign .sign_top a {
+  display: inline-block;
+  background-color: #f67909;
+  color: #fff;
+  width: 110px;
+  font-size: 15px;
+}
+.mian_top .sign .sign_top span {
+  color: #666;
+  font-size: 15px;
+}
+.mian_top .sign .notice {
+  padding-top: 5px;
+  height: 280px;
+  overflow: hidden;
+}
+.mian_top .sign .notice .notce_title {
+  overflow: hidden;
+}
+.mian_top .sign .notice .notce_title li {
+  float: left;
+  width: 125px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.mian_top .sign .notice .notce_title li a {
+  font-size: 16px;
+  display: block;
+  background-color: #f1f1f1;
+  color: black;
+}
+.mian_top .sign .notice .notce_title li .noatce_ative {
+  border-top: 4px solid #f67909;
+  background-color: #fff;
+  font-weight: bold;
+}
+.mian_top .sign .notice .notce_con {
+  clear: both;
+  background-color: #fff;
+  height: 264px;
+}
+.mian_top .sign .notice .notce_con li {
+  padding-top: 15px;
+}
+.mian_top .sign .notice .notce_con li a {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #000;
+  display: block;
+}
+.mian_top .sign .notice .notce_con li a span {
+  float: right;
+  margin-right: 20px;
+}
+.mian_top .sign .notice .notce_con li a:hover {
+  color: #f67909;
+}
+.mian_top .sign .recommend h3 {
+  font-size: 15px;
+  border-left: 6px solid #f67909;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+}
+.mian_top .sign .recommend .rec_ban {
+  background-color: #fff;
+  text-align: center;
+  height: 145px;
+  position: relative;
+}
+.mian_top .sign .recommend .rec_ban ul img {
+  margin-top: 15px;
+}
+.mian_top .sign .recommend .rec_ban .left_arrow {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 25px;
+  height: 45px;
+  line-height: 45px;
+  background: #a7a7a7;
+  color: #fff;
+  font-size: 20px;
+}
+.mian_top .sign .recommend .rec_ban .right_arrow {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 25px;
+  height: 45px;
+  line-height: 45px;
+  background: #a7a7a7;
+  color: #fff;
+  font-size: 20px;
+}
+.mian_top .sign .recommend .rec_ban p {
+  font-size: 14px;
+  margin-top: 6px;
+}
+.seckill {
+  margin-top: 30px;
+}
+.seckill .sekill_time {
+  position: relative;
 }

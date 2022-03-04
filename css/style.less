@@ -71,6 +71,7 @@ body{
                    display: block;
                    padding: 10px 20px;
                    letter-spacing: 8px;
+                   color: @color-main;
                }
                .search_active{
                    background-color: @color-main;
@@ -204,10 +205,250 @@ body{
         }
     }
 }
+// banner模块
 .mian_top{
     clear: both;
     width: 100%;
     height: 520px;
     border-top:4px solid @color-main;
     background-color: #fceddf;
+    .width{
+        overflow: hidden;
+    }
+    .sub_column{
+        float: left;
+        width: 250px;;
+        li{
+            height: 42px;
+            line-height: 43px;
+            background-color: #fff;
+           
+            border-bottom: 1px solid #e5e5e5;
+            a{
+                font-size: 14px;
+                color: #868685;
+                display: block;
+                overflow: hidden;
+                position: relative;
+                padding-left: 20px;
+                span{
+                    float: left;
+                    
+                }
+                i{
+                    float: right;
+                    margin-right: 20px;
+                }
+            }
+            a:hover{
+                background-color: @color-main;
+                color: #fff;
+            }
+           
+            
+        }
+        
+    }
+    .banner{
+        float: left;
+        margin: 5px 5px 0 5px;
+        width: 690px;
+        .ban_top{
+            position: relative;
+            width: 690px;
+            height: 330px;
+            box-sizing: border-box;
+            .rotation{
+                li{
+                    height: 330px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+            .spot{
+                width: 100%;
+                height: 30px;
+                background: rgba(0, 0, 0, .5);
+                position: absolute;
+                bottom: 0;
+                li{
+                    width: 17px;
+                    height: 4px;
+                    background-color:#fff;
+                    float: right;
+                    margin-right: 10px;
+                    margin-top: 14px;
+                }
+                .spot_activt{
+                    background-color: @color-main;
+                }
+            }
+        }
+        .ban_bot{
+            padding-top: 1px;
+            li{
+                float: left;
+                width: 229px;
+                height:  175px;
+                margin-right: 1px;
+                a{
+                    display: block;
+                    position: relative;
+                    .bot_text{
+                        position: absolute;
+                        bottom: 0;
+                        text-align: center;
+                        width: 229px;
+                        height:  175px;
+                        color: #fff;
+                        padding-top: 60px;
+                        box-sizing: border-box;
+                        h3{
+                            font-size: 18px;
+                            font-weight: normal;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .sign{
+        float: left;
+        margin-top: 5px;
+        width: 250px;
+        // 登录
+        .sign_top{
+            width: 250px;
+            height: 45px ;
+            line-height: 45px;
+            text-align: center;
+            background-color: @color-main;
+            a{
+                display: inline-block;
+                background-color: #f67909;
+                color: #fff;
+                width: 110px;
+                font-size: 15px;
+
+            }
+            span{
+                color: @color666;
+                font-size: 15px;
+            }
+        }
+        //新闻
+        .notice{
+            padding-top: 5px;
+            height: 280px;
+            overflow: hidden;
+            .notce_title{
+                overflow: hidden;
+                li{
+                    float: left;
+                    width: 125px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    a{
+                        font-size: 16px;
+                        display: block;
+                        background-color: #f1f1f1;
+                        color: black;
+                    }
+                    .noatce_ative{
+                        border-top:4px solid @color-main;
+                        background-color: #fff;
+                        font-weight: bold;
+                    }
+
+                }
+            }
+            .notce_con{
+                clear: both;
+                background-color: #fff;
+                // padding-top: 20px;
+                height: 264px;
+                li{
+                    padding-top: 15px;
+                    a{
+                        padding-left: 10px;
+                        font-size: 14px;
+                        color: #000;
+                        display: block;
+                        span{
+                            float: right;
+                            margin-right: 20px;
+                        }
+                    }
+                    a:hover{
+                        color: @color-main;
+                    }
+
+                }
+            }
+            
+           
+        }
+        //推荐
+        .recommend{
+            h3{
+                font-size: 15px;
+                border-left: 6px solid @color-main;
+                background-color:#f0f0f0 ;
+                padding: 5px 10px;
+            }
+            .rec_ban{
+                background-color: #fff;
+                text-align: center;
+                height: 145px;
+                position: relative;
+                ul{
+                    img{
+                        margin-top: 15px;
+                    }
+                }
+                .left_arrow{
+                    position: absolute;
+                    left: 0;
+                    top: 50px;
+                    width: 25px;
+                    height: 45px;
+                    line-height: 45px;
+                    background: #a7a7a7;
+                    color: #fff;
+                    font-size: 20px;
+                }
+                .right_arrow{
+                    position: absolute;
+                    right: 0;
+                    top:50px;
+                    width: 25px;
+                    height: 45px;
+                    line-height: 45px;
+                    background: #a7a7a7;
+                    color: #fff;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 14px;
+                    margin-top: 6px;
+                }
+                
+            }
+        }
+
+    }
+}
+// 限时秒杀
+.seckill{
+    margin-top: 30px;
+    .sekill_time{
+        position: relative;
+        .sekill_time_title{}
+    }
 }
