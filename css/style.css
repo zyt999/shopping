@@ -4,6 +4,7 @@
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 ul,
 ol {
@@ -419,5 +420,107 @@ body {
   margin-top: 30px;
 }
 .seckill .sekill_time {
+  float: left;
+  width: 230px;
+  height: 145px;
+  background: url(../images/seckill.png) no-repeat;
+  background-size: 100%;
   position: relative;
+}
+.seckill .sekill_time .sekill_time_title {
+  position: absolute;
+  right: -15px;
+  top: 35px;
+}
+.seckill .sekill_time .sekill_time_title h3 {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  background-color: #e85246;
+  float: left;
+}
+.seckill .sekill_time .sekill_time_title .triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-left-color: #e85246;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-right: none;
+}
+.seckill .sekill_time .sekill_time_con {
+  position: absolute;
+  right: 0;
+  top: 75px;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #525252;
+  background-color: #fffae8;
+}
+.seckill ul {
+  float: left;
+  width: 970px;
+  height: 145px;
+  border: 1px solid #d2d2d2;
+  box-sizing: border-box;
+}
+.seckill ul li {
+  float: left;
+  width: 322px;
+  border-right: 1px solid #d2d2d2;
+}
+.seckill ul li img {
+  float: left;
+  margin: 15px 20px;
+}
+.seckill ul li .sekill_text {
+  float: left;
+}
+.seckill ul li .sekill_text p {
+  width: 100px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.seckill ul li .sekill_text h3 {
+  font-size: 16px;
+}
+.seckill ul li .sekill_text .sekill_buy {
+  margin-top: 15px;
+}
+.seckill ul li .sekill_text .sekill_buy span {
+  float: left;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-decoration: line-through;
+}
+.seckill ul li .sekill_text .sekill_buy div {
+  float: left;
+  margin-left: 10px;
+}
+.seckill ul li .sekill_text .sekill_buy div span {
+  padding: 5px 0 5px 10px;
+  background-color: #f67909;
+  color: #fff;
+  font-size: 14px;
+  float: left;
+  text-decoration: none;
+}
+.seckill ul li .sekill_text .sekill_buy div i {
+  float: left;
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+  border-left-color: #f67909;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-right: none;
+}
+.seckill ul li:last-child {
+  border: none;
 }

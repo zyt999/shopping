@@ -6,6 +6,7 @@
 }
 a{
     text-decoration: none;
+    color: #000;
 }
 ul,ol{
     list-style: none;
@@ -448,7 +449,111 @@ body{
 .seckill{
     margin-top: 30px;
     .sekill_time{
+        float: left;
+        width: 230px;
+        height: 145px;
+        background: url(../images/seckill.png) no-repeat;
+        background-size: 100%;
         position: relative;
-        .sekill_time_title{}
+        .sekill_time_title{
+            position:absolute;
+            right: -15px;
+            top: 35px;
+            h3{
+                width: 200px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+                background-color: #e85246;
+                float: left;
+                // margin-left: 30px;
+                // margin-top: 35px;
+            }
+            .triangle{
+                display: inline-block;
+				width: 0;
+				height: 0;
+				border: 15px solid transparent;
+				border-left-color: #e85246;
+				border-bottom-color: transparent;
+				border-top-color: transparent;
+				border-right: none;
+			}
+        }
+        .sekill_time_con{
+            position:absolute;
+            right: 0;
+            top: 75px;
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #525252;
+            background-color: #fffae8;
+        }
+    }
+    ul{
+        float: left;
+        width: 970px;
+        height: 145px;
+        border: 1px solid #d2d2d2;
+        box-sizing: border-box;
+        li{
+            float: left;
+            width: 322px;
+            border-right:1px solid #d2d2d2; ;
+            img{
+                float: left;
+                margin: 15px 20px;
+            }
+            .sekill_text{
+                float: left;
+                p{
+                    width: 100px;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+                h3{
+                    font-size: 16px;
+                }
+                .sekill_buy{
+                    margin-top: 15px;
+                    span{
+                        float: left;
+                        font-size: 14px;
+                        padding:5px 10px;
+                        text-decoration: line-through;
+                    }
+                    div{
+                        float: left;
+                        margin-left: 10px;
+                        span{
+                            padding: 5px 0 5px 10px;
+                            background-color: @color-main;
+                            color: #fff;
+                            font-size: 14px;
+                            float: left;
+                            text-decoration: none;
+                            
+                        }
+                        i{
+                            float: left;
+                            width: 0;
+                            height: 0;
+                            border: 14px solid transparent;
+                            border-left-color: @color-main;
+                            border-bottom-color: transparent;
+                            border-top-color: transparent;
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+        li:last-child{
+            border: none;
+        }
     }
 }
