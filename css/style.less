@@ -682,12 +682,13 @@ body{
         box-sizing: border-box;
        li{
            float: left;
-           width: 321px;
+           width: 325px;
            height: 145px;
            border-top: 1px solid #d2d2d2;
            border-right: 1px solid #d2d2d2;
            background: url(../images//hot.png) no-repeat;
            background-position: 0 0;
+           box-sizing: border-box;
         a{
             display: block;
             img{
@@ -853,6 +854,7 @@ body{
    
     .class_swiper{
         width: 325px;
+        height: 430px;
         position: relative;
         float: left;
         img{
@@ -978,3 +980,72 @@ body{
     }
 }
 // 商品分类结束
+
+// 服务
+.service{
+    height: 85px;
+    margin-top: 40px;
+    width: 100%;
+    background-color: #dddddd;
+    li{
+        float: left;
+        height: 85px;
+        line-height: 85px;
+        vertical-align: middle;
+        margin-right: 128.75px;
+        img{
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+        span{
+            font-size: 18px;
+        }
+    }
+    li:last-child{
+        margin: 0;
+    }
+}
+// 底部
+footer{
+    width: 100%;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    padding-bottom: 40px;
+    .footer{
+        margin-bottom: 50px;
+        overflow: hidden;
+        a:hover{
+            color: @color-main;
+        }
+        dl{
+            margin: 0 65px;
+            margin-top: 60px;
+            float: left;
+            
+            a{
+                color: #fff;
+            }
+            dt{
+                margin-bottom: 20px;
+                a{
+                    font-size: 16px;
+                }
+
+            }
+            dd{
+                margin-bottom: 20px;
+                a{
+                font-size: 13px;
+                color: #999999;
+                }
+            }
+        }
+        
+    }
+    p{
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+}

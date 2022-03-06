@@ -646,12 +646,13 @@ body {
 }
 .hot .auction_list li {
   float: left;
-  width: 321px;
+  width: 325px;
   height: 145px;
   border-top: 1px solid #d2d2d2;
   border-right: 1px solid #d2d2d2;
   background: url(../images//hot.png) no-repeat;
   background-position: 0 0;
+  box-sizing: border-box;
 }
 .hot .auction_list li a {
   display: block;
@@ -810,6 +811,7 @@ body {
 }
 .class_con .class_swiper {
   width: 325px;
+  height: 430px;
   position: relative;
   float: left;
 }
@@ -928,4 +930,67 @@ body {
   border-bottom-color: transparent;
   border-top-color: transparent;
   border-right: none;
+}
+.service {
+  height: 85px;
+  margin-top: 40px;
+  width: 100%;
+  background-color: #dddddd;
+}
+.service li {
+  float: left;
+  height: 85px;
+  line-height: 85px;
+  vertical-align: middle;
+  margin-right: 128.75px;
+}
+.service li img {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.service li span {
+  font-size: 18px;
+}
+.service li:last-child {
+  margin: 0;
+}
+footer {
+  width: 100%;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+footer .footer {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+footer .footer a:hover {
+  color: #f67909;
+}
+footer .footer dl {
+  margin: 0 65px;
+  margin-top: 60px;
+  float: left;
+}
+footer .footer dl a {
+  color: #fff;
+}
+footer .footer dl dt {
+  margin-bottom: 20px;
+}
+footer .footer dl dt a {
+  font-size: 16px;
+}
+footer .footer dl dd {
+  margin-bottom: 20px;
+}
+footer .footer dl dd a {
+  font-size: 13px;
+  color: #999999;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 13px;
 }
