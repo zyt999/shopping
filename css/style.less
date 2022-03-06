@@ -103,7 +103,7 @@ body{
                 background-position: center;
             }
        }
-       .hot{
+       .hot_sea{
            clear: both;
            padding-top: 20px;
            span{
@@ -501,8 +501,9 @@ body{
         box-sizing: border-box;
         li{
             float: left;
-            width: 322px;
+            width: 321px;
             border-right:1px solid #d2d2d2; ;
+            box-sizing: border-box;
             img{
                 float: left;
                 margin: 15px 20px;
@@ -555,5 +556,208 @@ body{
         li:last-child{
             border: none;
         }
+    }
+}
+// 热门
+.hot{
+    clear: both;
+    h3{
+        padding-top: 30px;
+        margin-bottom: 15px;
+        font-size: 26px;
+        span{
+            font-size: 18px;
+            color: #ccc;
+            margin-left: 10px;
+            font-weight: normal;
+        }
+    }
+    .auction{
+        float: left;
+        width: 325px;
+        height: 290px;
+        border: 1px solid #d2d2d2 ;
+        box-sizing: border-box;
+        .auction_title{
+            height: 40px;
+            line-height: 40px;
+            width: 100%;
+            background-color: #f4f3f3;
+            border-bottom: 1px solid #d2d2d2;
+            h4{
+                float: left;
+                span{
+                    // display: inline-block;
+                    margin-left: 10px;
+                    padding-left: 10px;
+                    border-left: 8px solid @color-main;
+                    font-size: 15px;
+                }
+               
+            }
+            a{
+                float: right;
+                margin-right: 10px;
+            }
+         }
+         .auction_time{
+             display: inline-block;
+             margin-left: 60px;
+             margin-top: 20px;
+             
+             span{
+                display: inline-block;
+                 width: 30px;
+                 height: 25px;
+                 text-align: center;
+                 line-height: 25px;
+                 background-color: @color-main;
+                 color: #fff;
+                 margin: 0 2px;
+             }
+         }
+         .auction_banner{
+             margin-top: 20px;
+             text-align: center;
+             position: relative;
+             .left_arrow{
+                position: absolute;
+                left: 0;
+                top: 32px;
+                width: 25px;
+                height: 45px;
+                line-height: 45px;
+                background: #a7a7a7;
+                color: #fff;
+                font-size: 20px;
+            }
+            .right_arrow{
+                position: absolute;
+                right: 0;
+                top:32px;
+                width: 25px;
+                height: 45px;
+                line-height: 45px;
+                background: #a7a7a7;
+                color: #fff;
+                font-size: 20px;
+            }
+
+         }
+         .auction_text{
+             display: block;
+             overflow: hidden;
+             h5{
+                margin-left: 50px;
+                margin-top: 10px;
+                font-size: 14px;
+             }
+             .sekill_buy{
+                margin-left: 50px;
+                 span{
+                     float: left;
+                 }
+                 .price{
+                     font-size: 18px;
+                     font-weight: bold;
+                     padding: 5px 0;
+                 }
+                 .go_shopping{
+                     float: right;
+                     margin-right: 30px;
+                 }
+             }   
+         }
+}
+    .auction_list{
+        float: left;
+        width: 650px;
+        border-bottom: 1px solid #d2d2d2;
+        height: 290px;
+        box-sizing: border-box;
+       li{
+           float: left;
+           width: 324px;
+           height: 145px;
+           border-top: 1px solid #d2d2d2;
+           border-right: 1px solid #d2d2d2;
+           background: url(../images//hot.png) no-repeat;
+           background-position: 0 0;
+        a{
+            display: block;
+            img{
+                float: left;
+                margin: 30px 15px 10px 16px;
+            }
+            .list_text{
+                float: left;
+                padding-left: 10px;
+                h3{
+                    font-size: 14px;
+                    width: 95px;
+                    font-weight: normal;
+                }
+                p{
+                    font-size: 16px;
+                    margin-top: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+       }
+    }
+    .auction_img{
+        float: left;
+        width: 223px;
+        height:290px;
+        position: relative;
+        color: #fff;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .auciton_img_text{
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            text-align: center;
+            h3{
+                font-size: 24px;
+                font-weight: normal;
+            }
+            p{
+                font-size: 16px;
+                padding: 5px 10px;
+                background: rgba(0, 0, 0, .5);
+                border: 1px solid #fff;
+            }
+
+        }
+    }
+}
+//去抢购
+.go_shopping{
+    float: left;
+    margin-left: 10px;
+
+    span{
+        padding: 5px 0 5px 10px;
+        background-color: @color-main;
+        color: #fff;
+        font-size: 14px;
+        float: left;
+        text-decoration: none;
+        background-color: none;
+        
+    }
+    i{
+        float: left;
+        width: 0;
+        height: 0;
+        border: 14px solid transparent;
+        border-left-color: @color-main;
+        border-bottom-color: transparent;
+        border-top-color: transparent;
+        border-right: none;
     }
 }
